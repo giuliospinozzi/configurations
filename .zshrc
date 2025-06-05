@@ -21,3 +21,4 @@ export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 export HOMEBREW_NO_AUTO_UPDATE=1
 
+PS1="%B%n@%m %b%1~ %# "
