@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ExportStampings" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="it.umbria.regione.cartellini.MainKt" />
+    <module name="DataManagement.Stampings.main" />
+    <option name="PROGRAM_PARAMETERS" value="--config config_stamp_local.properties --outputFile &quot;$PROJECT_DIR$/../../../Documents/Regione Umbria/DataManagement/Cartellini/Timbrature.xlsx&quot;" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

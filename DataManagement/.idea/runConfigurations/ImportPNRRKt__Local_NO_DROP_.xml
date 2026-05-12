@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="ImportPNRRKt (Local NO DROP)" type="JetRunConfigurationType">
+    <option name="MAIN_CLASS_NAME" value="it.umbria.regione.pnrr.ImportPNRRKt" />
+    <module name="DataManagement.PNRR.main" />
+    <option name="PROGRAM_PARAMETERS" value="--config config_local.properties" />
+    <shortenClasspath name="NONE" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

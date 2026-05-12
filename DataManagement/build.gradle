@@ -1,0 +1,36 @@
+buildscript {
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.9.24'
+}
+apply plugin: 'idea'
+
+group = 'it.umbria.regione'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+subprojects {
+    apply plugin: 'kotlin'
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+
+    kotlin {
+        jvmToolchain(21)
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
+

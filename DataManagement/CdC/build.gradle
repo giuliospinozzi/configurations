@@ -1,0 +1,16 @@
+dependencies {
+    api project(":DataImporter")
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'it.umbria.regione.cdc.MainKt'
+        )
+    }
+    archiveBaseName = 'CdCImporter'
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

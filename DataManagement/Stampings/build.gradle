@@ -1,0 +1,19 @@
+dependencies {
+    implementation project(":DataImporter")
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    testImplementation 'junit:junit:4.13.+'
+    implementation files("../libs/plibrary-2.0.5.jar")
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'it.umbria.regione.cartellini.MainKt'
+        )
+    }
+    archiveBaseName = 'stampings'
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}

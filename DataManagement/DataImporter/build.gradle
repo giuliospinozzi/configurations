@@ -1,0 +1,10 @@
+dependencies {
+    api 'org.apache.poi:poi-ooxml:5.2.2'
+    api 'mysql:mysql-connector-java:8.0.25'
+    api 'org.threeten:threeten-extra:1.8.+'
+    api "args4j:args4j:2.+"
+    api 'org.jetbrains.kotlin:kotlin-stdlib'
+    implementation files("../libs/plibrary-2.0.5.jar")
+    testImplementation 'junit:junit:4.13.+'
+    testImplementation 'org.jetbrains.kotlin:kotlin-test'
+}

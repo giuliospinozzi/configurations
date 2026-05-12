@@ -1,0 +1,12 @@
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.5.0'
+}
+rootProject.name = 'DataManagement'
+
+include 'Stampings'
+include 'PNRR'
+include 'DataImporter'
+include 'CloudFunction'
+include 'CdC'
+include 'OpenPNRR'
+
